@@ -35,8 +35,6 @@ function verificarChute() {
     }
 }
 
-exibirMensagemInicial();
-
 function gerarNumeroAleatorio() {
     let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
@@ -48,7 +46,6 @@ function gerarNumeroAleatorio() {
         return gerarNumeroAleatorio();
     } else {
         listaDeNumerosSorteados.push(numeroEscolhido);
-        console.log(listaDeNumerosSorteados)
         return numeroEscolhido;
     }
 }
